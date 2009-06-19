@@ -1,0 +1,7 @@
+= lcdproc-ruby
+
+Description goes here.
+
+== Copyright
+
+Copyright (c) 2009 topherfangio. See LICENSE for details.
