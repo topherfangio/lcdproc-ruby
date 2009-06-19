@@ -28,7 +28,7 @@ require 'lcdproc.rb'
 
 include LCDProc
 
-c = Client.new( :name => "My Client", :host => "192.168.1.142" )
+c = Client.new( :name => "My Client", :host => "localhost" )
 s = Screen.new( "Test" )
 
 c.attach( s )

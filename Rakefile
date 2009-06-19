@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "lcdproc-ruby"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{A Ruby library to interface with LCDProc.}
     gem.email = "fangiotophia@gmail.com"
     gem.homepage = "http://github.com/topherfangio/lcdproc-ruby"
     gem.authors = ["topherfangio"]
@@ -18,7 +18,7 @@ end
 
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
+  test.libs << 'lib/tasks/test' << 'test'
   test.pattern = 'test/**/*_test.rb'
   test.verbose = true
 end
