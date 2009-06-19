@@ -1,7 +1,9 @@
-= lcdproc-ruby
+=Introduction
+LCDProc-Ruby is an object-oriented API to the LCDProc server LCDd.
 
-Description goes here.
+To get started, take a look at LCDProc::Client since it is the main
+interface to LCDd. If you are interested in the status of development,
+head over to the TODO to see what outstanding bugs are listed as well
+as an overview of the features that are yet to be implemented.
 
-== Copyright
-
-Copyright (c) 2009 topherfangio. See LICENSE for details.
+LCDProc-Ruby is released under the open source MIT license.

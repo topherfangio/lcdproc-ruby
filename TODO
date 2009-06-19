@@ -1,0 +1,18 @@
+=Introduction
+
+Currently, I am still in the process of stating all of the features that I would like to implement for the 1.0
+release. Many aspects of the program are in a working condition and can be used to create a basic program that
+talks to the LCDd server. I hope to add much functionality over the next few months and to ensure that the code
+structure enables easy extension by other developers (and myself).
+
+=Bug Fixes
+
+Bug fixes are any code/design changes that need to be implemented in order for the API to function properly or
+conform to standards.
+
+* Horizontal bar graphs should be able to handle a percentage or a regular integer
+* The <tt>menu_add_item</tt> command currently returns two responses and I have inserted a hack to get it to work, a cleaner solution is desired
+
+=Future Enhancements
+
+Any feature requests will be documented here until they can be fully implemented and added into the existing API.

@@ -51,6 +51,13 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "lcdproc-ruby #{version}"
   rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('TODO*')
   rdoc.rdoc_files.include('lib/**/*.rb')
+  rdoc.rdoc_files.include('devices/**/*.rb')
+
+  # Show all methods including private ones
+  rdoc.options << '--all'
+  # Show line numbers and source code
+  rdoc.options << '--line-numbers' << '--inline-source'
 end
 
