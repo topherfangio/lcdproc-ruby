@@ -1,4 +1,5 @@
 *.sw?
+.project
 .DS_Store
 coverage
 rdoc

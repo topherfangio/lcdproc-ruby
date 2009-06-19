@@ -11,7 +11,7 @@ begin
     gem.authors = ["topherfangio"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
-
+  
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end
@@ -47,17 +47,24 @@ Rake::RDocTask.new do |rdoc|
   else
     version = ""
   end
-
+  
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "lcdproc-ruby #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('TODO*')
   rdoc.rdoc_files.include('lib/**/*.rb')
   rdoc.rdoc_files.include('devices/**/*.rb')
-
+  
   # Show all methods including private ones
   rdoc.options << '--all'
   # Show line numbers and source code
   rdoc.options << '--line-numbers' << '--inline-source'
 end
 
+# Load lcdproc-ruby specific tasks
+require 'find'
+Find.find( "tasks/test" ) do |file|
+  if File.basename( file ) =~ /\.rake$/
+    load File.expand_path( file )
+  end
+end
